@@ -1,0 +1,149 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Mar 29 18:51:05 2023
+# Process ID: 17608
+# Current directory: C:/Users/lewic/OneDrive/Documents/GitHub/VHDLproject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15144 C:\Users\lewic\OneDrive\Documents\GitHub\VHDLproject\CONTENTMENT BUTTONS.xpr
+# Log file: C:/Users/lewic/OneDrive/Documents/GitHub/VHDLproject/vivado.log
+# Journal file: C:/Users/lewic/OneDrive/Documents/GitHub/VHDLproject\vivado.jou
+# Running On: DESKTOP-M09HIOT, OS: Windows, CPU Frequency: 3000 MHz, CPU Physical cores: 4, Host memory: 8472 MB
+#-----------------------------------------------------------start_gui
+open_project {C:/Users/lewic/OneDrive/Documents/GitHub/VHDLproject/CONTENTMENT BUTTONS.xpr}
+uupdate_compile_order -fileset sources_1rupdate_compile_order -fileset sources_1
+bs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+file mkdir C:/Users/lewic/OneDrive/Documents/GitHub/VHDLproject/CONTENTMENT BUTTONS.srcs/constrs_1
+file mkdir C:/Users/lewic/OneDrive/Documents/GitHub/VHDLproject/CONTENTMENT BUTTONS.srcs/constrs_1
+file mkdir C:/Users/lewic/OneDrive/Documents/GitHub/VHDLproject/CONTENTMENT BUTTONS.srcs/constrs_1/new
+file mkdir C:/Users/lewic/OneDrive/Documents/GitHub/VHDLproject/CONTENTMENT BUTTONS.srcs/constrs_1/new
+file mkdir C:/Users/lewic/OneDrive/Documents/GitHub/VHDLproject/CONTENTMENT BUTTONS.srcs/constrs_1/new
+file mkdir C:/Users/lewic/OneDrive/Documents/GitHub/VHDLproject/CONTENTMENT BUTTONS.srcs/constrs_1/new
+file mkdir C:/Users/lewic/OneDrive/Documents/GitHub/VHDLproject/CONTENTMENT BUTTONS.srcs/constrs_1
+file mkdir {C:/Users/lewic/OneDrive/Documents/GitHub/VHDLproject/CONTENTMENT BUTTONS.srcs/constrs_1/new}
+close [ open {C:/Users/lewic/OneDrive/Documents/GitHub/VHDLproject/CONTENTMENT BUTTONS.srcs/constrs_1/new/ACBConstraits.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/lewic/OneDrive/Documents/GitHub/VHDLproject/CONTENTMENT BUTTONS.srcs/constrs_1/new/ACBConstraits.xdc}}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/lewic/OneDrive/Documents/GitHub/VHDLproject/CONTENTMENT BUTTONS.srcs/constrs_1/new/ACBConstraits.xdc}}] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 {{C:/Users/lewic/OneDrive/Documents/GitHub/VHDLproject/CONTENTMENT BUTTONS.srcs/constrs_1/new/ACBConstraits.xdc}}
+add_files -fileset constrs_1 -norecurse C:/Users/lewic/Downloads/digilent-xdc/Basys-3-Master.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property IOSTANDARD LVTTL [get_ports [list {debounced_button[3]}]]
+set_property IOSTANDARD LVTTL [get_ports [list {debounced_button[2]}]]
+set_property IOSTANDARD LVTTL [get_ports [list {debounced_button[1]}]]
+set_property IOSTANDARD LVTTL [get_ports [list {debounced_button[0]}]]
+refresh_design
+set_property IOSTANDARD LVTTL [get_ports [list {debounced_button[3]}]]
+set_property IOSTANDARD LVTTL [get_ports [list {debounced_button[2]}]]
+set_property IOSTANDARD LVTTL [get_ports [list {debounced_button[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports pause_btn]
+set_property IOSTANDARD LVCMOS33 [get_ports reset_btn]
+set_property iostandard LVTTL [get_ports [list warning_light]]
+set_property target_constrs_file C:/Users/lewic/Downloads/digilent-xdc/Basys-3-Master.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property IOSTANDARD LVTTL [get_ports [list {debounced_button[0]}]]
+refresh_design
+set_property IOSTANDARD LVCMOS33 [get_ports [list {debounced_button[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {debounced_button[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {debounced_button[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {debounced_button[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports pause_btn]
+set_property iostandard LVCMOS33 [get_ports [list reset_btn]]
+set_property iostandard LVCMOS33 [get_ports [list warning_light]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {debounced_button[3]}]]
+set_property PACKAGE_PIN V17 [get_ports reset_btn]
+set_property PACKAGE_PIN V14 [get_ports reset_btn]
+set_property PACKAGE_PIN V14 [get_ports reset_btn]
+set_property PACKAGE_PIN U16 [get_ports reset_btn]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {debounced_button[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {debounced_button[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {debounced_button[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {debounced_button[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {debounced_button[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports pause_btn]
+set_property iostandard LVCMOS33 [get_ports [list reset_btn]]
+set_property iostandard LVCMOS33 [get_ports [list warning_light]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/lewic/OneDrive/Documents/GitHub/VHDLproject/CONTENTMENT BUTTONS.runs/impl_1/Control_Unit.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lewic/OneDrive/Documents/GitHub/VHDLproject/CONTENTMENT BUTTONS.runs/impl_1/Control_Unit.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+file copy -force {C:/Users/lewic/OneDrive/Documents/GitHub/VHDLproject/CONTENTMENT BUTTONS.runs/impl_1/Control_Unit.bit} C:/Users/lewic/OneDrive/Documents/GitHub/VHDLproject/bitstreamVHDL.bit
